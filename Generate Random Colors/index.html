@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 100%;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="colorChange()">
+
+    </div>
+
+    <input type="color" oninput="colorChangeEventHandler(event)">
+
+
+    <script>
+        const colorChange = () => {
+            console.log("click")
+            document.querySelector("#box").addEventListener('click',()=>{
+                document.querySelector("#box").style.backgroundColor = getRandomColor();
+            })
+        }
+
+        const getRandomColor = () => {
+            var red = Math.floor(Math.random() * 256);
+            var green = Math.floor(Math.random() * 256);
+            var blue = Math.floor(Math.random() * 256);
+            return `rgb(${red}, ${green}, ${blue})`;
+        }
+
+        function colorChangeEventHandler(e) {
+            // console.log(e.target.value);
+            document
+                .querySelector("#box")
+                .style.backgroundColor = e.target.value;
+        }
+       
+    </script>
+</body>
+</html>

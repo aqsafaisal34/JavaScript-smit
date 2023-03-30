@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="../event/images/1.jpg" alt="" id="myImg" width="300px" onclick="InvisibleImage(event)">
+
+    <script>
+     let InvisibleImage = (e) => {
+        // target method is used when we have multiple images 
+       // let imgElm = e.target;
+       //imgElm.style.display = "none";
+
+       document.querySelector("#myImg").className = "hidden";
+       
+     }
+    </script>
+</body>
+</html>

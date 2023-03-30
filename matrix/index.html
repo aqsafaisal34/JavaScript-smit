@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="matrix-1">
+        <div class="row-1">
+          <input type="number" id="r1" />
+          <input type="number" id="r2" />
+          <input type="number" id="r3" />
+        </div>
+        <div class="row-2">
+          <input type="number" id="r4" />
+          <input type="number" id="r5" />
+          <input type="number" id="r6" />
+        </div>
+        <div class="row-3">
+          <input type="number" id="r7" />
+          <input type="number" id="r8" />
+          <input type="number" id="r9" />
+        </div>
+      </div>
+
+      +
+
+      <div class="matrix-2">
+        <div class="row-1">
+          <input type="number" id="c1" />
+          <input type="number" id="c2" />
+          <input type="number" id="c3" />
+        </div>
+        <div class="row-2">
+          <input type="number" id="c4" />
+          <input type="number" id="c5" />
+          <input type="number" id="c6" />
+        </div>
+        <div class="row-3">
+          <input type="number" id="c7" />
+          <input type="number" id="c8" />
+          <input type="number" id="c9" />
+        </div>
+      </div>
+
+      =
+
+      <div class="result-matrix">
+        <div class="row-1">
+        <input type="number" id="d1" />
+        <input type="number" id="d2" />
+        <input type="number" id="d3" />
+        </div>
+        <div class="row-2">
+        <input type="number" id="d4" />
+        <input type="number" id="d5" />
+        <input type="number" id="d6" />
+        </div>
+        <div class="row-3">
+        <input type="number" id="d7" />
+        <input type="number" id="d8" />
+        <input type="number" id="d9" />
+        </div>
+      </div>
+      <button onclick="Add()">Add</button>
+    </div>
+
+    <script>
+       let Add = () => {
+      let r1 = document.querySelector("#r1").value;
+      let r2 = document.querySelector("#r2").value;
+      let r3 = document.querySelector("#r3").value;
+      let r4 = document.querySelector("#r4").value;
+      let r5 = document.querySelector("#r5").value;
+      let r6 = document.querySelector("#r6").value;
+      let r7 = document.querySelector("#r7").value;
+      let r8 = document.querySelector("#r8").value;
+      let r9 = document.querySelector("#r9").value;
+
+      let c1 = document.querySelector("#c1").value;
+      let c2 = document.querySelector("#c2").value;
+      let c3 = document.querySelector("#c3").value;
+      let c4 = document.querySelector("#c4").value;
+      let c5 = document.querySelector("#c5").value;
+      let c6 = document.querySelector("#c6").value;
+      let c7 = document.querySelector("#c7").value;
+      let c8 = document.querySelector("#c8").value;
+      let c9 = document.querySelector("#c9").value;
+
+      let result1 = r1 + c1;
+      let result2 = r2 + c2;
+      let result3 = r3 + c3;
+      let result4 = r4 + c4;
+      let result5 = r5 + c5;
+      let result6 = r6 + c6;
+      let result7 = r7 + c7;
+      let result8 = r8 + c8;
+      let result9 = r9 + c9;
+     
+     
+      document.querySelector("#d1").innerHTML = result1;
+      document.querySelector("#d2").innerHTML = result2;
+      document.querySelector("#d3").innerHTML = result3;
+      document.querySelector("#d4").innerHTML = result4;
+      document.querySelector("#d5").innerHTML = result5;
+      document.querySelector("#d6").innerHTML = result6;
+      document.querySelector("#d7").innerHTML = result7;
+      document.querySelector("#d8").innerHTML = result8;
+      document.querySelector("#d9").innerHTML = result9;
+      console.log("click")
+      }
+      
+      
+    </script>
+  </body>
+</html>

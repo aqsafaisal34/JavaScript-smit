@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        body>img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body style="display:flex; justify-content: center; flex-direction: column;">
+
+    <img src="./images/1.jpg" alt="" id="slider" onclick="handler(event)">
+    <!-- <img src="./images/2.jpg" alt="" onclick="handler(event)">
+    <img src="./images/3.jpg" alt="" onclick="handler(event)">
+    <img src="./images/4.jpg" alt="" onclick="handler(event)"> -->
+
+
+
+    <script>
+        const handler = (event) => {
+
+            // console.log(event)
+            // console.log("offsetX: ", event.offsetX);
+            // console.log("clientWidth: ", event.target.clientWidth);
+
+            let clickX = event.offsetX;
+            let imageCurrentRenderWidth = event.target.clientWidth;
+            let clickXPercentage = Math.floor((clickX * 100) / imageCurrentRenderWidth);
+
+            console.log("clickXPercentage: ", clickXPercentage, "%");
+            let images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"];
+
+  
+        }
+    </script>
+</body>
+
+</html>

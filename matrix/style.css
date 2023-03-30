@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.matrix-1, .matrix-2, .result-matrix{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+   
+
+}
+input{
+    width: 40px;
+}
+.row-1, .row-2, .row-3{
+    margin: 5px;
+}
